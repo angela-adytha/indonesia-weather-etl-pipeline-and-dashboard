@@ -1,0 +1,41 @@
+-- View used as the Looker Studio data source.
+CREATE OR REPLACE VIEW `weather-etl.weather_dwh.vw_dashboard` AS
+SELECT
+    fwd.city_id, 
+    fwd.city_name, 
+    fwd.province, 
+    fwd.island, 
+    fwd.date,
+    fwd.temp_max_c, 
+    fwd.temp_min_c, 
+    fwd.temp_mean_c,
+    fwd.precipitation_mm, 
+    fwd.rain_mm,
+    fwd.wind_speed_kmh, 
+    fwd.wind_gust_kmh,
+    fwd.humidity_pct, 
+    fwd.uv_index, 
+    fwd.weather_code, 
+    fwd.sunshine_sec, 
+    fwd.fetched_at,
+    fwd.year, 
+    fwd.month, 
+    fwd.month_name, 
+    fwd.week, 
+    fwd.day_name, 
+    fwd.is_weekend, 
+    fwd.season,
+    fwd.sunshine_hours, 
+    fwd.temp_range_c, 
+    fwd.heat_index_c, 
+    fwd.heat_index_category,
+    fwd.weather_label, 
+    fwd.rain_category, fwd.uv_category,
+    fwd.is_rainy, 
+    fwd.is_extreme_heat, 
+    fwd.is_anomaly_temp,
+    dc.latitude, 
+    dc.longitude
+FROM `weather-etl.weather_dwh.fact_weather_daily` fwd
+JOIN `weather-etl.weather_dwh.dim_city` dc
+  ON fwd.city_id = dc.city_id;

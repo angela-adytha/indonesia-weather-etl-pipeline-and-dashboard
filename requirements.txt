@@ -1,0 +1,9 @@
+requests==2.34.2
+pandas==2.3.3
+numpy==2.3.5
+pandas-gbq==0.35.2
+google-cloud-bigquery==3.46.2
+google-auth==2.62.0
+python-dotenv==1.1.0
+ipykernel==6.31.0
+jupyterlab==4.4.7
