@@ -4,7 +4,7 @@ End-to-end data project: pull daily weather for 10 Indonesian cities from the Op
 
 > **Course project** (Purwadhika DS & ML Program). The assignment template defined the fact/dimension schema. The extract, transform, load, SQL view, analytical queries, corrections to the template, and the dashboard were built by me.
 
-**Live dashboard:** https://datastudio.google.com/reporting/52b3495a-3735-4fb5-854e-51de1121a6dd
+**Live dashboard:** [https://datastudio.google.com/reporting/4a1eaf36-869a-4483-bae4-bc20fe16183d](https://datastudio.google.com/reporting/4a1eaf36-869a-4483-bae4-bc20fe16183d)
 
 ![Dashboard overview](docs/dashboard_overview.png)
 
